@@ -1,0 +1,34 @@
+body {
+  color:#F2F2F2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #F15A24 , #FF7900,#FF9C27);
+  font-size: 21px;
+  font-weight:300;
+}
+
+.carousel-indicators {
+  justify-content: left;
+  padding: 0 7%;  
+  top: 10%;
+}
+
+.carousel-indicators .active {
+  background: #FF7900;
+}
+
+.carousel-indicators li {
+  background: #CCCCCC;
+  border-radius: 50%;
+  min-height:15px;
+  max-width: 15px;
+  margin: 0 16px;
+}
+
+/* 
+#carousel-proyectos {
+  text-align: left;
+} */
+
