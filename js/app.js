@@ -14,7 +14,6 @@ var uploadImage = function() {
 var showImage = function(target) {
   var $currentSlide = $("li.active");
   var $newImage = $("li[data-slide=" + target + "]");
-  console.log($currentSlide,$newImage);
   $currentSlide.removeClass("active");
   $newImage.addClass("active");
 }
