@@ -1,4 +1,4 @@
-body {
+ body {
   color:#F2F2F2;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -53,7 +53,6 @@ ol {
 .description-project {
   font-size: 12pt;
   font-weight: 300;
-  text-align: justify;
 }
 
 .controls {
@@ -66,7 +65,7 @@ ol {
   border-radius: 50%;
   border: none;
   min-height:15px;
-  margin: 0 15px;
+  margin: 0 10px;
   width: 15px;
 }
 
@@ -87,12 +86,56 @@ ol {
   font-size: 0.8rem;
 }
 
+.fa-bars {
+  background: linear-gradient(to right, #F15A24 , #FF7900,#FF9C27);
+  font-size: 1.5em;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 /* make sidebar nav vertical */ 
 @media (max-width: 768px) {
-
+  nav > img {
+    width: 40%;
+  }
+  
+  #carousel-projects > section {
+    display:block;
+  }
+  
   .navbar {
     float: none;
+    justify-content: space-between;
     padding: 0%;
     display: flex;
+    position: static;
+    width: 100%;
   }
+  
+  .navbar-collapse {
+  background: linear-gradient(to right, #F15A24 , #FF7900,#FF9C27);
+  margin: 0;    
+  }
+
+  .title-slide {
+    font-size: 10pt;
+  }
+  
+  .title-project {
+    font-size: 20pt;
+    
+  }
+  
+  .description-project {
+    font-size: 10pt;
+  }
+
+  .slide {
+    padding: 40% 10%;
+  }
+
+  .controls {
+    padding: 13% 10% 0% 10%;
+  }
+
 }
