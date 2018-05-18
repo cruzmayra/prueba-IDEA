@@ -1,5 +1,4 @@
 var target = 0;
-console.log($('li.active'))
 
 $(document).ready(function(){
   var $buttons = $(".control");

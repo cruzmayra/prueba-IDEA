@@ -7,15 +7,16 @@ body {
 
 header {
   background: linear-gradient(to right, #F15A24 , #FF7900,#FF9C27);
+  clear: none;
   font-size: 21px;
   font-weight:300;
 }
 
-li.active {
+.slide.active {
   display: block;
 }
 
-li {
+.slide {
   background-repeat: no-repeat;
   background-size: cover;
   display:none;
@@ -62,4 +63,18 @@ ol {
 
 .controls button.active {
   background:#FF7900;
+}
+
+.navbar {
+  display: block;
+  float: left;
+}
+
+
+/* make sidebar nav vertical */ 
+@media (max-width: 768px) {
+  .navbar {
+    float: none;
+    display: flex;
+  }
 }
