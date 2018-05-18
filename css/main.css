@@ -1,6 +1,8 @@
 body {
   color:#F2F2F2;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -9,26 +11,55 @@ header {
   font-weight:300;
 }
 
-.carousel-indicators {
-  justify-content: left;
-  padding: 0 7%;  
-  top: 10%;
+li.active {
+  display: block;
 }
 
-.carousel-indicators .active {
-  background: #FF7900;
+li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:none;
+  min-height: 100vh;
+  padding: 15% 21%;
 }
 
-.carousel-indicators li {
+.container-slide, 
+ol { 
+  margin: 0;
+  padding: 0;
+}
+
+.title-slide {
+  font-size: 20pt;
+  font-weight: 400;
+}
+
+.title-project {
+  font-size: 36pt;
+  font-weight: 700;
+  line-height: 95%;
+}
+
+.description-project {
+  font-size: 12pt;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.controls {
+  float: left;
+  padding: 5% 21% 0% 21%;
+}
+
+.controls > button {
   background: #CCCCCC;
   border-radius: 50%;
+  border: none;
   min-height:15px;
-  max-width: 15px;
-  margin: 0 16px;
+  margin: 0 15px;
+  width: 15px;
 }
 
-/* 
-#carousel-proyectos {
-  text-align: left;
-} */
-
+.controls button.active {
+  background:#FF7900;
+}
